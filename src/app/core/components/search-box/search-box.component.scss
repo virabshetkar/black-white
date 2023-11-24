@@ -1,0 +1,20 @@
+form {
+  margin-inline: auto;
+  max-width: 600px;
+  padding-left: 0.25rem;
+  display: flex;
+  border: 1px solid;
+  background-color: white;
+}
+
+input {
+  flex-grow: 1;
+  font-size: 1rem;
+  border: none;
+  outline: transparent;
+}
+
+.search-button {
+  background-color: #333;
+  color: white;
+}

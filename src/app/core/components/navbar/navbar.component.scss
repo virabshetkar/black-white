@@ -1,0 +1,52 @@
+:host {
+  display: block;
+}
+
+nav {
+  height: var(--navbar-height);
+  box-shadow: 0 5px 15px #0005;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: white;
+  transition: box-shadow 250ms;
+  &.scrolled-top {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  & > * {
+    flex-grow: 1;
+    &:first-child,
+    &:last-child {
+      flex-grow: 0;
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+.company-text {
+  font-weight: 600;
+}
+
+.logo-text {
+  font-weight: 300;
+}
+
+.nav-actions {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.nav-actions,
+.title {
+  flex-basis: 220px;
+}

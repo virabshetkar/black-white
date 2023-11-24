@@ -1,0 +1,15 @@
+<nav [ngClass]="{ 'scrolled-top': scrolledToTop$ | async }">
+  <div class="title">
+    <button type="button"><mat-icon>menu</mat-icon></button>
+    <div class="company-text">Black</div>
+    <div class="logo-text">&White</div>
+  </div>
+  @if((isMobile$ | async) === false) {
+  <div class="search-box-container">
+    <app-search-box></app-search-box>
+  </div>
+  }
+  <div class="nav-actions">
+    <button type="button"><mat-icon>account_circle</mat-icon></button>
+  </div>
+</nav>

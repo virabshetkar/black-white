@@ -1,0 +1,6 @@
+@for(todo of (todos$ | async); track todo.id) {
+<div class="todo-container">
+  <h3 class="title">{{ todo.title }}</h3>
+  <div class="description">{{ todo.description }}</div>
+</div>
+}
